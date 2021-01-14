@@ -1,0 +1,2 @@
+rootProject.name='LoginWithDaggerMVVM'
+include ':app'

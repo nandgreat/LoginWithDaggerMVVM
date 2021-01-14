@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:scrollbars="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/reg_txt"
+                style="@style/TextStyle"
+                android:text="Registrationn Number"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:text="RIFAN/2019D/EK/2843"
+                android:id="@+id/reg_val"
+                style="@style/TextValueStyle"
+                app:layout_constraintTop_toBottomOf="@+id/reg_txt" />
+
+            <TextView
+                app:layout_constraintTop_toBottomOf="@+id/reg_val"
+                android:text="FirstName"
+                android:id="@+id/fname_txt"
+                style="@style/TextStyle" />
+
+            <EditText
+                android:id="@+id/edit_fname"
+                android:text="Quadri"
+                style="@style/EditStyle"
+                app:layout_constraintTop_toBottomOf="@+id/fname_txt" />
+
+            <TextView
+                android:text="MiddleName"
+
+                style="@style/TextStyle"
+                app:layout_constraintTop_toBottomOf="@+id/bvn_val"
+                android:id="@+id/mname_txt" />
+
+            <EditText
+                app:layout_constraintTop_toBottomOf="@+id/mname_txt"
+                style="@style/EditStyle"
+                android:text="Adedayo"
+                android:id="@+id/mname_edit" />
+
+            <TextView
+                android:text="Address"
+                style="@style/TextStyle"
+                app:layout_constraintTop_toBottomOf="@+id/dob_val"
+                android:id="@+id/address_txt" />
+
+            <EditText
+                app:layout_constraintTop_toBottomOf="@+id/address_txt"
+                style="@style/EditStyle"
+                android:text="S21 Laderin Estate"
+                android:id="@+id/address_edit" />
+
+            <TextView
+                android:text="DATE OF BIRTH"
+                android:id="@+id/dob"
+                app:layout_constraintTop_toBottomOf="@+id/mname_edit"
+                style="@style/TextStyle" />
+
+            <TextView
+                android:text="1989-10-23"
+                android:id="@+id/dob_val"
+                style="@style/TextValueStyle"
+                app:layout_constraintTop_toBottomOf="@+id/dob" />
+
+            <TextView
+                android:text="Occupation"
+                android:id="@+id/ocup"
+                app:layout_constraintTop_toBottomOf="@+id/address_edit"
+                style="@style/TextStyle" />
+
+            <TextView
+                android:text="Farmer"
+                android:id="@+id/ocup_val"
+                style="@style/TextValueStyle"
+                app:layout_constraintTop_toBottomOf="@+id/ocup" />
+
+            <TextView
+                android:text="City"
+                android:id="@+id/city_txt"
+                app:layout_constraintTop_toBottomOf="@+id/ocup_val"
+                style="@style/TextStyle" />
+
+            <TextView
+                android:text="Oye Ekiti"
+                android:id="@+id/city_val"
+                style="@style/TextValueStyle"
+                app:layout_constraintTop_toBottomOf="@+id/city_txt" />
+
+            <TextView
+                android:text="BVN"
+                android:id="@+id/bvn_txt"
+                app:layout_constraintTop_toBottomOf="@+id/edit_fname"
+                style="@style/TextStyle" />
+
+            <TextView
+                android:text="22221610376"
+                android:id="@+id/bvn_val"
+                style="@style/TextValueStyle"
+                app:layout_constraintTop_toBottomOf="@+id/bvn_txt" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/btn_update"
+
+        android:layout_margin="16dp"
+        app:fabSize="normal"
+
+        android:backgroundTint="@color/colorPrimary"
+        android:src="@drawable/ic_done_black_24dp"
+        android:layout_height="wrap_content" />
+</androidx.constraintlayout.widget.ConstraintLayout>

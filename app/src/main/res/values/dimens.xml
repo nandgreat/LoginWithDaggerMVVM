@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textSizeBig">16sp</dimen>
+    <dimen name="textSizeBigValue">15sp</dimen>
+    <dimen name="paddingTop">5sp</dimen>
+    <dimen name="paddingTopValue">6sp</dimen>
+    <dimen name="editMargin">10sp</dimen>
+</resources>

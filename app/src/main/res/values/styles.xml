@@ -1,0 +1,46 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="TextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeBig</item>
+        <item name="android:paddingTop">@dimen/paddingTop</item>
+        <item name="android:paddingLeft">@dimen/editMargin</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily" tools:ignore="NewApi">@font/medq</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="EditStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:fontFamily" tools:ignore="NewApi">@font/rr</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/editMargin</item>
+        <item name="android:background">@drawable/edit</item>
+        <item name="android:padding">@dimen/editMargin</item>
+        <item name="android:layout_marginLeft">@dimen/editMargin</item>
+        <item name="android:layout_marginRight">@dimen/editMargin</item>
+        <item name="android:inputType">textMultiLine|text|textAutoComplete|textCapSentences</item>
+    </style>
+
+    <style name="TextValueStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:fontFamily" tools:ignore="NewApi">@font/medq</item>
+        <item name="android:textSize">@dimen/textSizeBigValue</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/paddingTopValue</item>
+        <item name="android:paddingBottom">@dimen/paddingTopValue</item>
+        <item name="android:paddingLeft">@dimen/editMargin</item>
+
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+
+</resources>
