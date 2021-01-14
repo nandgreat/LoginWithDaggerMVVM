@@ -11,7 +11,9 @@ import com.example.loginwithdaggermvvm.model.Repositry;
 import com.example.loginwithdaggermvvm.model.db.AppDatabase;
 import com.example.loginwithdaggermvvm.model.db.FarmersRecordDao;
 import com.example.loginwithdaggermvvm.model.db.UserDao;
+import com.example.loginwithdaggermvvm.network.auth.AuthApi;
 import com.example.loginwithdaggermvvm.repository.UserRepository;
+import com.example.loginwithdaggermvvm.util.Helper;
 
 import java.util.concurrent.Executor;
 
@@ -53,9 +55,8 @@ public class NetworkModule {
 
     @Provides
     @PerActivity
-    public UserRepository userRepository(UserDao userDao, Executor
-            executor, ApiEndPoint apiEndPoint) {
-        return new UserRepository(executor, userDao, apiEndPoint);
+    public UserRepository userRepository(Executor executor, UserDao userDao, AuthApi apiEndPoint, Helper helper) {
+        return new UserRepository(executor, userDao, apiEndPoint, helper);
     }
 
     @Provides

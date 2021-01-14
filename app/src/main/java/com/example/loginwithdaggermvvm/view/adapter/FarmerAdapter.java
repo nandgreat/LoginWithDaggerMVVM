@@ -14,7 +14,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.loginwithdaggermvvm.R;
 import com.example.loginwithdaggermvvm.model.db.FarmersBean;
-import com.example.loginwithdaggermvvm.view.EditActivity;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;

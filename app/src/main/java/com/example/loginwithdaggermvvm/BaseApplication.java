@@ -1,8 +1,7 @@
 package com.example.loginwithdaggermvvm;
 
 
-import com.example.loginwithdaggermvvm.di.componet.DaggerAppComponent;
-
+import com.example.loginwithdaggermvvm.di.DaggerAppComponent;
 import dagger.android.AndroidInjector;
 import dagger.android.support.DaggerApplication;
 

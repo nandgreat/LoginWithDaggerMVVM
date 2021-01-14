@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.loginwithdaggermvvm.R;
-import com.example.loginwithdaggermvvm.di.componet.DaggerAppComponent;
+import com.example.loginwithdaggermvvm.di.DaggerAppComponent;
 import com.example.loginwithdaggermvvm.di.module.AppModule;
 import com.example.loginwithdaggermvvm.di.module.NetworkModule;
 import com.example.loginwithdaggermvvm.model.db.FarmersBean;

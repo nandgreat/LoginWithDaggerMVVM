@@ -3,16 +3,12 @@ package com.example.loginwithdaggermvvm;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProviders;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
 
-import com.example.loginwithdaggermvvm.di.componet.DaggerAppComponent;
-import com.example.loginwithdaggermvvm.di.module.AppModule;
-import com.example.loginwithdaggermvvm.di.module.NetworkModule;
+
 import com.example.loginwithdaggermvvm.model.db.User;
-import com.example.loginwithdaggermvvm.view.LoginActivity;
 import com.example.loginwithdaggermvvm.viewmodel.AppViewModel;
 import com.example.loginwithdaggermvvm.viewmodel.ViewModelFactory;
 
@@ -45,8 +41,8 @@ public class MainActivity extends AppCompatActivity {
         textView = findViewById(R.id.textView);
 
 
-        DaggerAppComponent.builder().appModule(new AppModule()).build()
-                .appComponent(new NetworkModule(this)).inject(this);
+//        DaggerAppComponent.builder().appModule(new AppModule()).build()
+//                .appComponent(new NetworkModule(this)).inject(this);
 
 
         appViewModel = ViewModelProviders.of(this, viewModelFactory)
